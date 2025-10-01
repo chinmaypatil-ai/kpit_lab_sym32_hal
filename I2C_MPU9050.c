@@ -144,7 +144,7 @@ void MPU9250_INIT(void){
 
 	//Step1.4:Set accelerometer configuration
 		 uint8_t data3 = 0x00;
-		 HAL_I2C_Mem_Write(&hi2c1,MPU9250_ADDR,SMPLRT_DIV_ADDR,1,&data3,1,HAL_MAX_DELAY);
+		 HAL_I2C_Mem_Write(&hi2c1,MPU9250_ADDR,ACCEL_CONFIG_ADDR,1,&data3,1,HAL_MAX_DELAY);
 }
 
  void MPU9250_Read_Accel(void)
